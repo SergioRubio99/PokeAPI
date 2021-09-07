@@ -172,3 +172,35 @@ function pokePic_3(pic, hp, exp, att, satt, def, name) {
     pokeName.textContent = `${name}`;
 
 }
+
+
+
+
+// RANDOM BACKGROUND COLOURING:
+
+// Reference model: 
+// background: rgb(2,0,36)
+// background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,31,135,1) 41%, rgba(0,212,255,1) 100%)
+
+const $body = d.querySelector('body');
+
+let randomDeg = Math.random() * 360;
+let randomRGBA1 = Math.random() * 100;
+$body.setAttribute(`style`, `background: linear-gradient(${randomDeg}deg, rgba(${randomRGBA1},10,236,1) 0%, rgba(80,31,135,0.5) 61%, rgba(0,212,255,1) 100%)`);
+
+// RANDOM CARDS COLOURING:
+// Reference model: background: linear-gradient(to bottom, rgb(0, 174, 255) 43%, white 40% 60%, white 60% 80%, white 80%);
+
+let $card1 = d.querySelector('.card_1_1');
+let $card2 = d.querySelector('.card_1_2');
+let $card3 = d.querySelector('.card_1_3');
+
+let randomColour1 = Math.floor((Math.random() * 100) + 100);
+let randomColour2 = Math.floor((Math.random() * 6) + 4);
+let randomColour3 = Math.floor((Math.random() * 100) + 100);
+
+
+
+$card1.setAttribute(`style`, `background: linear-gradient(to bottom, rgb(${randomColour1}, 124, 255) 43%, white 40% 60%, white 60% 80%, white 80%)`)
+$card2.setAttribute(`style`, `background: linear-gradient(to bottom, rgba(${randomColour1}, 114, 255,0.${randomColour2}) 43%, white 40% 60%, white 60% 80%, white 80%)`)
+$card3.setAttribute(`style`, `background: linear-gradient(to bottom, rgba(${randomColour3}, 114, 255,0.${randomColour2}) 43%, white 40% 60%, white 60% 80%, white 80%)`)
