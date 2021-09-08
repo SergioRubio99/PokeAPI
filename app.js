@@ -201,6 +201,6 @@ let randomColour3 = Math.floor((Math.random() * 100) + 100);
 
 
 
-$card1.setAttribute(`style`, `background: linear-gradient(to bottom, rgb(${randomColour1}, 124, 255) 43%, white 40% 60%, white 60% 80%, white 80%)`)
-$card2.setAttribute(`style`, `background: linear-gradient(to bottom, rgba(${randomColour1}, 114, 255,0.${randomColour2}) 43%, white 40% 60%, white 60% 80%, white 80%)`)
-$card3.setAttribute(`style`, `background: linear-gradient(to bottom, rgba(${randomColour3}, 114, 255,0.${randomColour2}) 43%, white 40% 60%, white 60% 80%, white 80%)`)
+$card1.setAttribute(`style`, `background: linear-gradient(to bottom, rgb(${randomColour1}, 124, 255) 43%, white 40% 60%, white 60% 80%, white 80%)`);
+$card2.setAttribute(`style`, `background: linear-gradient(to bottom, rgba(${randomColour1}, 114, 255,0.${randomColour2}) 43%, white 40% 60%, white 60% 80%, white 80%)`);
+$card3.setAttribute(`style`, `background: linear-gradient(to bottom, rgba(${randomColour3}, 114, 255,0.${randomColour2}) 43%, white 40% 60%, white 60% 80%, white 80%)`);
